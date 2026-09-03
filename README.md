@@ -3,90 +3,6 @@ bem vindo (a) ao meu blog
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EcoVida - Blog sobre a Natureza</title>
-    <style>
-        /* Estilos Gerais */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        body {
-            background-color: #f4f8f5;
-            color: #2d3748;
-            line-height: 1.6;
-        }
-
-        /* Cabeçalho */
-        header {
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-                        url('https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1350&q=80');
-            background-size: cover;
-            background-position: center;
-            color: #ffffff;
-            text-align: center;
-            padding: 80px 20px;
-        }
-
-        header h1 {
-            font-size: 3rem;
-            margin-bottom: 10px;
-        }
-
-        header p {
-            font-size: 1.2rem;
-            opacity: 0.9;
-        }
-
-        /* Navegação */
-        nav {
-            background-color: #2e7d32;
-            display: flex;
-            justify-content: center;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-
-        nav a {
-            color: white;
-            padding: 15px 25px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: background 0.3s;
-        }
-
-        nav a:hover {
-            background-color: #1b5e20;
-        }
-
-        /* Layout Principal */
-        .container {
-            max-width: 1100px;
-            margin: 30px auto;
-            padding: 0 20px;
-            display: flex;
-            gap: 30px;
-        }
-
-        /* Conteúdo dos Posts */
-        .main-content {
-     function botaoClicado() {
-console.log("fui clicado");
-let texto = botao.querySelector("span");
-
-if (curtiu === false) {
-texto.textContent++;
-curtiu = true;
-} else {
-texto.textContent--;
-curtiu = false;
-}
-}
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -143,68 +59,152 @@ curtiu = false;
 
   <footer class="footer">
     <p>&copy; 2026 Blog Empatia. Todos os direitos reservados.</p>
-          body {
-        background-color: #f4f8f5;
-        color: #2d3748;
-        line-height: 1.6;
-    }
-
-    /* Cabeçalho */
-    header {
-        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-                    url('https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1350&q=80');
-        background-size: cover;
-        background-position: center;
-        color: #ffffff;
-        text-align: center;
-        padding: 80px 20px;
-    }
-
-    header h1 {
-        font-size: 3rem;
-        margin-bottom: 10px;
-    }
-
-    header p {
-        font-size: 1.2rem;
-        opacity: 0.9;
-    }
-
-    /* Navegação */
-    nav {
-        background-color: #2e7d32;
-        display: flex;
-        justify-content: center;
-        position: sticky;
-        top: 0;
-        z-index: 100;
-    }
-
-    nav a {
-        color: white;
-        padding: 15px 25px;
-        text-decoration: none;
-        font-weight: bold;
-        transition: background 0.3s;
-    }
-
-    nav a:hover {
-        background-color: #1b5e20;
-    }
-
-    /* Layout Principal */
-    .container {
-        max-width: 1100px;
-        margin: 30px auto;
-        padding: 0 20px;
-        display: flex;
-        gap: 30px;
-    }
-
-    /* Conteúdo dos Posts */
-    .main-content {
- function botaoClicado() {
   </footer>
 
 </body>
 </html>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f4f6f8;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header */
+.header {
+  background-color: #2c3e50;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 15px;
+  transition: opacity 0.2s;
+}
+
+.header nav a:hover {
+  opacity: 0.8;
+}
+
+/* Post Content */
+.content {
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.post {
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.post h2 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.post .meta {
+  font-size: 0.85rem;
+  color: #7f8c8d;
+  margin-bottom: 20px;
+}
+
+.post-img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin: 20px 0;
+}
+
+.post p {
+  margin-bottom: 15px;
+}
+
+/* Botões de Like e Dislike */
+.feedback-container {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+  text-align: center;
+}
+
+.feedback-container p {
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn-like {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+  border: 1px solid #a5d6a7;
+}
+
+.btn-like:hover {
+  background-color: #2e7d32;
+  color: #fff;
+}
+
+.btn-dislike {
+  background-color: #ffebee;
+  color: #c62828;
+  border: 1px solid #ef9a9a;
+}
+
+.btn-dislike:hover {
+  background-color: #c62828;
+  color: #fff;
+}
+
+.count {
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #ecf0f1;
+  color: #7f8c8d;
+  font-size: 0.9rem;
+}
